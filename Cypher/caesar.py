@@ -7,10 +7,10 @@ key = {'a':'n', 'b':'o', 'c':'p', 'd':'q', 'e':'r', 'f':'s', 'g':'t', 'h':'u',
        'O':'B', 'P':'C', 'Q':'D', 'R':'E', 'S':'F', 'T':'G', 'U':'H', 'V':'I', 
        'W':'J', 'X':'K', 'Y':'L', 'Z':'M'}
        
-coded_message = 'Pnrfne pvcure? V zhpu cersre Pnrfne fnynq!'
+coded_message = 'Bttije xh pi Adcsdc-Tnt pi 9eb hwpge'
 
 def get_originalmessage(message):
-    for l in coded_message:
+    for l in message:
         return l
 
 def translate(message, key):
@@ -71,3 +71,4 @@ def make_key(rot_value):
             key[l] = chr(ord(l) + rot_value)
     return key
             
+decode(coded_message, key)
